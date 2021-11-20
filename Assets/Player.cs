@@ -26,9 +26,8 @@ public class Player : MonoBehaviour
         {
             if(IsFlying == false) // если статус персонажа = не в полете
             {
-               
                 var TouchPosition = Input.mousePosition; // переменная получает координаты точки курсора мыши в момент нажатия
-                Debug.Log(TouchPosition); // показать координаты в лог
+                Debug.Log("TouchPosition = " + TouchPosition); // показать координаты в лог
 
                 GetComponent<Rigidbody2D>().AddForce(TouchPosition * Power); // добавить воздействие силы на объект
                 Arrow.SetActive(false); // отключить стрелочку
@@ -64,6 +63,28 @@ public class Player : MonoBehaviour
                 IsGoingUp = true; // нужно увеличивать мощность
             }
         }
-        Arrow.transform.localScale = new Vector3(Power, Power, Power); // увеличивать масштаб стрелки
+        Arrow.transform.localScale = new Vector3(Power, Power, Power); // менять масштаб стрелки
+        
+   
+//    
+        var PlayerPosition = gameObject.transform.position; // координаты объекта Player
+        // Debug.Log("PlayerPosition = " + PlayerPosition); // показать координаты в лог
+        var MovePosition = Input.mousePosition; // координаты мыши
+        
+        // if(Input.GetAxis("Mouse X")<0) // если движется мышь
+        // {
+            // MovePosition = Input.mousePosition; // взять координаты мыши
+            // Debug.Log("MovePosition = " + MovePosition); // показать координаты в лог
+            float ArrowDirectionAngle = Vector3.Angle(PlayerPosition, Input.mousePosition); // угол между объектом Player и указателем мыши - считает НЕ правильно, что-то сделано НЕ правильно.
+            Debug.Log("ArrowDirectionAngle = " + ArrowDirectionAngle);
+
+            // Arrow.transform.eulerAngles  = new Vector3(0f ,0f, ArrowDirectionAngle); // менять угол стрелки, НЕ правильно
+        // }
+    
+        
+
+
+       
+ 
     }
 }

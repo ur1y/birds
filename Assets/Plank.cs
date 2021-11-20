@@ -5,11 +5,11 @@ using UnityEngine;
 public class Plank : MonoBehaviour
 {
     public float VelocityToDestroy;
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision) // При столкновении
     {
-        if (collision.relativeVelocity.magnitude > VelocityToDestroy )
+        if (collision.relativeVelocity.magnitude > VelocityToDestroy ) // Если скорость > заданного параметра
         {
-            Destroy(gameObject);
+            Destroy(gameObject); // убрать объект
         }
     }
 }

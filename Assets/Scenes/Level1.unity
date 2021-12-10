@@ -1289,10 +1289,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WinPanel: {fileID: 1071506260}
   LossPanel: {fileID: 116578897}
-  Enemy1: {fileID: 48776880}
-  Enemy2: {fileID: 410549039}
+  Enemies: []
   Player: {fileID: 1785443915}
-  EnemyCount: 1
 --- !u!4 &936241692
 Transform:
   m_ObjectHideFlags: 0
@@ -1692,7 +1690,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1563999894}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.28, y: -1.11, z: 0}
+  m_LocalPosition: {x: -6.64, y: -1.11, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1910,9 +1908,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ec271f150810404d9f63f1a021a988e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Force: {x: 200, y: 100}
   IsFlying: 0
+  GameCamera: {fileID: 519420031}
   Power: 0
+  PowerModifier: 300
   IsGoingUp: 0
   Arrow: {fileID: 1563999894}
   PlayerTimeAlive: 3

@@ -1,2 +1,70 @@
+# =============== #
+# Builds          #
+# =============== #
+*.apk
+builds/
+ios-build/
+.vs/
 
-Temp/UnityLockfile
+# =============== #
+# GitEye          #
+# =============== #
+/.project
+
+# =============== #
+# Unity Library   #
+# =============== #
+Library/
+
+# =============== #
+# Unity temp      #
+# =============== #
+Temp/
+Logs/
+Build/ 
+#Assets/Plugins.meta
+#Assets/Plugins/
+#Assets/Plugins/Editor/
+#Assets/Plugins/Editor.meta
+Assets/Placeholder/
+
+# ============================================= #
+# Visual Studio / MonoDevelop / Rider generated #
+# ============================================= #
+.idea/
+.vscode/
+ExportedObj/
+obj/
+*.svd
+*.userprefs
+*.csproj
+*.pidb
+*.suo
+*.sln
+*.user
+*.unityproj
+*.booproj
+Assets/Plugins/Editor/JetBrains
+
+# ========================== #
+# NodeJS for tools and utils #
+# ========================== #
+/Tools/**/node_modules/
+
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Thumbs.db.meta
+Assembly-CSharp.csproj.DotSettings
+.vs/pull-pin-balls/v15/Server/sqlite3/storage.ide-wal
+.vs/pull-pin-balls/v15/Server/sqlite3/db.lock
+.vs/pull-pin-balls/v15/Server/sqlite3/storage.ide
+.vs/pull-pin-balls/v15/Server/sqlite3/storage.ide-shm
+Assets/Plugins/iOS.meta

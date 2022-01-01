@@ -5,7 +5,7 @@ public class GameController : MonoBehaviour
 {
     public GameObject WinPanel; // игровой объект Окно Победы
     public GameObject LossPanel; // игровой объект Окно Поражения
-    public GameObject[] Enemies; // игровой объект Враги
+    public GameObject[] Enemies; // игровой объект Враги // ........... ?????????????? что значат добавленные квадратные скобки ??????????????? .....................
     public GameObject Player; // игровой объект Герой
 
     private void Start()
@@ -24,6 +24,7 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+// Проверка что все враги уничтожены
         var allEnemiesAreDead = true;
         foreach (var enemy in Enemies)
         {
@@ -33,21 +34,31 @@ public class GameController : MonoBehaviour
                 allEnemiesAreDead = false;
             }
         }
+
+// Условие победы
         if (allEnemiesAreDead)
         {
             WinPanel.SetActive(true); // показать Окно Победы   
         }
+
+// Условие поражения
         else if (Player == null)
         {
             Debug.Log("Player = null");
             LossPanel.SetActive(true); // показать Окно Поражения
         }
-        if (WinPanel == true)
+
+// Перезагрузка сцены
+        if (WinPanel == true) // зачем?
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // перезагружаем эту же сцену
             }
         }
+
+
+
+
     }
 }

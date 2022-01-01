@@ -11,8 +11,6 @@ public class Enemy : MonoBehaviour
         if (collision.relativeVelocity.magnitude > VelocityToDestroy)
         {
             Destroy(gameObject);
-            // GameController.EnemyCount = GameController.EnemyCount - 1;
-            //  WinPanel.SetActive(true); // показать Окно Победы
         }
     }
 }

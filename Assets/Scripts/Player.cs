@@ -31,7 +31,7 @@ public class Player : MonoBehaviour
             }
         }
 
-        // условие уничтожить героя  
+// условие уничтожить героя  
         if (IsFlying)
         {
             PlayerTimeAlive = PlayerTimeAlive - Time.deltaTime;
@@ -41,7 +41,7 @@ public class Player : MonoBehaviour
             }
         }
 
-        // увеличение или уменьшение стрелки
+// увеличение или уменьшение стрелки
         if (IsGoingUp) // если нужно увеличивать мощность
         {
             Power = Power + Time.deltaTime; // увеличивать мощность

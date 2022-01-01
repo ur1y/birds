@@ -7,6 +7,7 @@ public class WinPanel : MonoBehaviour
 {
     public void PlayNextLevel() // Следующий уровень
     {
+        Debug.Log("Button was pressed");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

@@ -17,7 +17,9 @@ public class Bomb : MonoBehaviour
             {
                 if(collider.attachedRigidbody.bodyType == RigidbodyType2D.Dynamic) // проверка что выделенные коллайдер имеет динамический ригидбоди - это нужно чтобы не уничтожать объект "землю"
                 {
-                    Destroy(collider.gameObject);
+                    // Destroy(collider.gameObject); // уничтожить все объекты у которых есть выделенный коллайдер
+                    Vector2 dir = collider.transform.position - transform.position; // если из вектора одного объекта вычесть вектор другого объекта, то получится вектор-направление между двумя этими объектами (transform.position - координаты бомбы)
+                    collider.attachedRigidbody.AddForce(dir.normalized * 500); // вектор нужно нормализовать чтобы объекты которые расположены дальше не имели большую силу за счет более длинного вектора
                 }
                 
 

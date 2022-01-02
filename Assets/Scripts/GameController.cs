@@ -42,12 +42,12 @@ public class GameController : MonoBehaviour
         }
 
 // Условие поражения
-        else if (Player == null)
+/*        else if (Player == null)
         {
             Debug.Log("Player = null");
             LossPanel.SetActive(true); // показать Окно Поражения
         }
-
+*/
 // Перезагрузка сцены
         if (WinPanel == true) // зачем?
         {

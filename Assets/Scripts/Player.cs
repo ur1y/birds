@@ -11,6 +11,8 @@ public class Player : MonoBehaviour
     public GameObject Arrow; // добавление игрового объекта - стрелочка
     public float PlayerTimeAlive; // сколько времени живет герой
 
+    public GameObject PartOfPlayerPrefab; // префабы - это геймобджекты
+
     private void Start()
     {
     }
@@ -28,6 +30,17 @@ public class Player : MonoBehaviour
                     .AddForce(directionToMouse * Power * PowerModifier); // добавить воздействие силы на объект
                 Arrow.SetActive(false); // отключить стрелочку
                 IsFlying = true; // сказать что статус персонажа = в полете
+            }
+            else
+            { 
+                if(PartOfPlayerPrefab != null)
+                {
+                    Instantiate(PartOfPlayerPrefab, transform.position + new Vector3(0.1f, 0.1f), transform.rotation); // создаем объект PartOfPlayer координаты и угол берем из компонента transform
+                    Instantiate(PartOfPlayerPrefab, transform.position + new Vector3(-0.1f, -0.1f), transform.rotation); // создаем объект PartOfPlayer координаты и угол берем из компонента transform
+                    Instantiate(PartOfPlayerPrefab, transform.position, transform.rotation); // создаем объект PartOfPlayer координаты и угол берем из компонента transform
+                    Destroy(gameObject); // уничтожаем объект
+                }
+                
             }
         }
 

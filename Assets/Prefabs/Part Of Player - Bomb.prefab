@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4550959614423363695}
   - component: {fileID: 4555367949817960940}
   m_Layer: 0
-  m_Name: Bomb
+  m_Name: Part Of Player - Bomb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -133,6 +133,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ceff4ecc22d21c4ea63967b791bf519, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VelocityToDestroy: 1
-  ExplosionRadius: 3
-  BombTimeAlive: 0
+  VelocityToDestroy: 0.001
+  ExplosionRadius: 5
+  BombTimeAlive: 0.05

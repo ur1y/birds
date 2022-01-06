@@ -11,7 +11,8 @@ public class Player : MonoBehaviour
     public GameObject Arrow; // добавление игрового объекта - стрелочка
     public float PlayerTimeAlive; // сколько времени живет герой
 
-    public GameObject PartOfPlayerPrefab; // префабы - это геймобджекты
+    public GameObject PartOfPlayerPrefab_Sun; // префабы - это геймобджекты
+    public GameObject PartOfPlayerPrefab_Bomb; // префабы - это геймобджекты
 
     private void Start()
     {
@@ -33,12 +34,19 @@ public class Player : MonoBehaviour
             }
             else
             { 
-                if(PartOfPlayerPrefab != null)
+                // Птица генерящая других птиц
+                if(PartOfPlayerPrefab_Sun != null)
                 {
-                    Instantiate(PartOfPlayerPrefab, transform.position + new Vector3(0.1f, 0.1f), transform.rotation); // создаем объект PartOfPlayer координаты и угол берем из компонента transform
-                    Instantiate(PartOfPlayerPrefab, transform.position + new Vector3(-0.1f, -0.1f), transform.rotation); // создаем объект PartOfPlayer координаты и угол берем из компонента transform
-                    Instantiate(PartOfPlayerPrefab, transform.position, transform.rotation); // создаем объект PartOfPlayer координаты и угол берем из компонента transform
+                    Instantiate(PartOfPlayerPrefab_Sun, transform.position + new Vector3(0.1f, 0.1f), transform.rotation); // создаем объект PartOfPlayer координаты и угол берем из компонента transform
+                    Instantiate(PartOfPlayerPrefab_Sun, transform.position + new Vector3(-0.1f, -0.1f), transform.rotation); // создаем объект PartOfPlayer координаты и угол берем из компонента transform
+                    Instantiate(PartOfPlayerPrefab_Sun, transform.position, transform.rotation); // создаем объект PartOfPlayer координаты и угол берем из компонента transform
                     Destroy(gameObject); // уничтожаем объект
+                }
+                
+                // Птица выбрасывающая бомбу других птиц
+                if(PartOfPlayerPrefab_Bomb != null)
+                {
+                    Instantiate(PartOfPlayerPrefab_Bomb, transform.position, transform.rotation); // создаем объект PartOfPlayer_Bomb координаты и угол берем из компонента transform
                 }
                 
             }

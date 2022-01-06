@@ -28,8 +28,7 @@ public class GameController : MonoBehaviour
         var allEnemiesAreDead = true;
         foreach (var enemy in Enemies)
         {
-            // выполнить для каждого врага
-            if (enemy != null)
+            if (enemy != null) // выполнить для каждого врага
             {
                 allEnemiesAreDead = false;
             }
@@ -48,17 +47,23 @@ public class GameController : MonoBehaviour
             LossPanel.SetActive(true); // показать Окно Поражения
         }
 */
-// Перезагрузка сцены
-        if (WinPanel == true) // зачем?
-        {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // перезагружаем эту же сцену
-            }
-        }
-
-
-
-
+// Перезагрузка сцены по кнопке пробел
+        // if (WinPanel == true) // зачем?
+        // {
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // перезагружаем эту же сцену
+                }
     }
+
+
+
+// Перезагрузка сцены по кнопке Restart в HUD игры     
+
+    public void RestartThisLevel() // Следующий уровень
+    {
+        // Debug.Log("Button was pressed");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
 }

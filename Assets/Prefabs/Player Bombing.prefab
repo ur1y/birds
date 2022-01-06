@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 1927266328247227214}
   - component: {fileID: 1927266328247227217}
   m_Layer: 0
-  m_Name: Player Splitting
+  m_Name: Player Bombing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -155,7 +155,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5d701e3482385a349890dd20d1100b99, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 67d4d1653da15e442a6c7d15c5d6137b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -204,7 +204,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.82, y: 1.23}
+    oldSize: {x: 1.22, y: 1.39}
     newSize: {x: 0.78014183, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -232,6 +232,6 @@ MonoBehaviour:
   IsGoingUp: 0
   Arrow: {fileID: 1927266327495203735}
   PlayerTimeAlive: 3
-  PartOfPlayerPrefab_Sun: {fileID: 5192328475863665727, guid: 555cf15af15d0b344a6d656892478cb7,
+  PartOfPlayerPrefab_Sun: {fileID: 0}
+  PartOfPlayerPrefab_Bomb: {fileID: 2820119290939001004, guid: 131c1df8d0af8404295c05e0539950d5,
     type: 3}
-  PartOfPlayerPrefab_Bomb: {fileID: 0}

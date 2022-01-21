@@ -1393,6 +1393,16 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 1449428642}
+    - target: {fileID: 6234839392700333609, guid: b934e04386fe56a47a20651b4818c4bc,
+        type: 3}
+      propertyPath: WinPanel
+      value: 
+      objectReference: {fileID: 8643732127078093198}
+    - target: {fileID: 6234839392700333609, guid: b934e04386fe56a47a20651b4818c4bc,
+        type: 3}
+      propertyPath: LossPanel
+      value: 
+      objectReference: {fileID: 8643732127078093197}
     - target: {fileID: 6234839392700333614, guid: b934e04386fe56a47a20651b4818c4bc,
         type: 3}
       propertyPath: m_RootOrder
@@ -1643,3 +1653,15 @@ PrefabInstance:
       objectReference: {fileID: 519420031}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4634cd1bca36624480df8d0564b34ce, type: 3}
+--- !u!1 &8643732127078093197 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8643732127192304605, guid: e4634cd1bca36624480df8d0564b34ce,
+    type: 3}
+  m_PrefabInstance: {fileID: 8643732127078093196}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8643732127078093198 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8643732126266749656, guid: e4634cd1bca36624480df8d0564b34ce,
+    type: 3}
+  m_PrefabInstance: {fileID: 8643732127078093196}
+  m_PrefabAsset: {fileID: 0}

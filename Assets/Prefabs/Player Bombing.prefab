@@ -232,6 +232,7 @@ MonoBehaviour:
   IsGoingUp: 0
   Arrow: {fileID: 1927266327495203735}
   PlayerTimeAlive: 3
+  IsGlass: 1
   PartOfPlayerPrefab_Sun: {fileID: 0}
   PartOfPlayerPrefab_Bomb: {fileID: 2820119290939001004, guid: 131c1df8d0af8404295c05e0539950d5,
     type: 3}

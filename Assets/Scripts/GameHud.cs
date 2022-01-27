@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class GameHud : MonoBehaviour
 {
-    public Text currentLevelText;
+//    public Text currentLevelText;
 }

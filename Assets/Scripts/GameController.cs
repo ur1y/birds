@@ -8,8 +8,14 @@ public class GameController : MonoBehaviour
     public GameObject[] Enemies; // игровой объект Враги // ........... ?????????????? что значат добавленные квадратные скобки ??????????????? .....................
     public GameObject Player; // игровой объект Герой
 
+
+//    public WinPanel WinPanel;
+
     private void Start()
     {
+//        var gameManager = FindObjectOfType<GameManager>();
+//        WinPanel = gameManager.GetWinPanel();
+        
         // !!!!! 
         // 1-й способ проверки что все враги убиты:
         // 1). посчитать кол-во объектов с тэгом "Enemy", 
@@ -37,7 +43,8 @@ public class GameController : MonoBehaviour
 // Условие победы
         if (allEnemiesAreDead)
         {
-            WinPanel.SetActive(true); // показать Окно Победы   
+            
+           WinPanel.SetActive(true); // показать Окно Победы   
         }
 
 // Условие поражения
@@ -58,7 +65,7 @@ public class GameController : MonoBehaviour
 
 
 
-// Перезагрузка сцены по кнопке Restart в HUD игры     
+// Перезагрузка сцены по кнопке Restart в HUD игры  (домашнее задание)   
 
     public void RestartThisLevel() // Следующий уровень
     {

@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     public bool IsGoingUp; // переменная да/нет
     public GameObject Arrow; // добавление игрового объекта - стрелочка
     public float PlayerTimeAlive; // сколько времени живет герой
+    public bool IsGlass; // планка из стекла?
 
     public GameObject PartOfPlayerPrefab_Sun; // префабы - это геймобджекты
     public GameObject PartOfPlayerPrefab_Bomb; // префабы - это геймобджекты

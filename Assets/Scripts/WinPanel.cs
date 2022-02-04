@@ -9,12 +9,12 @@ public class WinPanel : MonoBehaviour
 {
     public GameProgress Progress;
     
-/*
+
     private void Start()
     {
         Progress = FindObjectOfType<GameProgress>(); // находим скрипт GameProgress который должен быть в сцене 
     }
-*/
+
     
     public void PlayNextLevel() // Следующий уровень
     {
@@ -24,13 +24,13 @@ public class WinPanel : MonoBehaviour
         {
             ChangeLevelTo(1);
 //            SceneManager.LoadScene(1); // если да, то грузим первый уровень
-//            Progress.SetCurrentLevel(1); // переддаем значение методу
+            Progress.SetCurrentLevel(1); // переддаем значение методу
         }
         else
         {
             ChangeLevelTo(currentSceneIndex + 1);
-//            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // если нет, то грузим следующий уровень
-//            Progress.SetCurrentLevel(currentSceneIndex + 1); // переддаем значение методу
+//           SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // если нет, то грузим следующий уровень
+            Progress.SetCurrentLevel(currentSceneIndex + 1); // переддаем значение методу
         }
     }   
 

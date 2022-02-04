@@ -168,6 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winPanel: {fileID: 0}
+  restartButton: {fileID: 1181342410925538186}
 --- !u!1 &2415672409108562118
 GameObject:
   m_ObjectHideFlags: 0
